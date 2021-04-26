@@ -1,0 +1,83 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Criclytics</title>
+    <style media="screen">
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+
+      }
+      .wrapper{
+        min-height: 100%;
+        height: auto;
+        height: 100%;
+        margin: 0 auto -142px;
+      }
+      .topnav {
+        overflow: hidden;
+      }
+      .topnav a{
+        margin-top: 20px;
+        float: right;
+        color: #aaaaaa;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .welcome{
+        text-align: center;
+        padding:30px;
+      }
+      .welcome h1{
+        font-family: 'Yusei Magic', sans-serif;
+      }
+      .welcome p{
+        font-family: 'Open Sans', sans-serif;}
+        .footer p{
+          text-align: center;
+          margin: 10px 2px;
+          margin-top: 30px;
+          padding:30px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="topnav">
+        {% load static %} <img class="logo" src={% static "images/th.png" %} alt="error">
+        <a class="contact" href="{%  url 'about-page' %}">About us</a>
+        <a class="predict" href="{%  url 'index-page' %}">Predict</a>
+        <a class="active" href="{% url 'web-page' %}">Home</a>
+      </div>
+      <div class="welcome" id="mywelcome">
+        <h1>Welcome !</h1>
+        <p>In a country divided by religious feuds and discrimination, cricket is what moulds people from all walks of
+          life into one. If a cricket match is involved, the average Indian will take a rain check for most things.
+          This is the country where Test matches take place not only on vast grounds but also in the narrow balconies
+          like those in Mumbai’s chawls. This is the country where children idolize cricketers and each child dreams
+          of being the next legend in world of cricket.</p>
+        <p>Cricket in India is more than a sport; it’s a way of life. I still remember summer vacations of my school
+          days that were spent with countless hours of cricket, with breaks for lunch. The only reason play was called
+          off was when we went past our curfew limit.
+        </p>
+        <p>
+          Cricket telecasts, especially when India was playing, was an occasion for a family get-together. For that
+          matter any match which consisted of evenly-matched teams was fair game. The passion for the game runs
+          through the veins of every Indian. It is his nirvana. It is his idea of a day spent well.
+        </p>
+        <p>We focus on Prediction of outcome of most-attended cricket league in the world i.e., Indian Premiure League (IPL). Curious to know which team has more winning chances?, then click on  Predict..</p>
+        <div>
+          <footer class="footer">
+            <p>Copyright 2021 CricStats Inc. All rights reserved.</p>
+          </footer>
+  </body>
+</html>
